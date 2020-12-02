@@ -4,7 +4,7 @@
 1012_유기농_배추.java
 
 ## Math
-1000_A+B.py .cpp
+1000_A+B.cpp .py
 
 1001_A-B.py
 
