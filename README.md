@@ -11,6 +11,8 @@
 ## Etc
 1237_정ㅋ벅ㅋ.py
 
+1264_모음의 개수.cpp
+
 ## Implementation
 1100_하얀 칸.py
 
