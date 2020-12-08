@@ -56,7 +56,7 @@ class dfs {
 	int m; // length of map
 	int n; // height of map
 	int[] map;
-	int total = 0; // number of Áö··ÀÌ
+	int total = 0; // number of ÃÃ¶Â·Â·Ã€ÃŒ
 	boolean[] visited;
 	int i;
 	Node[] fList;
