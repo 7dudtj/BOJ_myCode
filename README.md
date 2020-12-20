@@ -1,16 +1,13 @@
 # BOJ_myCode
 
 ## BFS
-1260_DFS와 BFS.java
-
-2178_미로 탐색.java
-
 <details>
 <summary>
 문제 보기
 </summary>
 <div markdown="1">
 1260_DFS와 BFS.java
+  
 2178_미로 탐색.java
 </div>
 </details>
