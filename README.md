@@ -13,11 +13,23 @@
 </details>
 
 ## DFS
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
 1012_유기농 배추.java
 
 1260_DFS와 BFS.java
+</div>
+</details>
 
 ## Etc
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
 1237_정ㅋ벅ㅋ.py
 
 1264_모음의 개수.cpp
@@ -25,8 +37,15 @@
 1463_1로 만들기.py
 
 2555_생일 출력하기.py
+</div>
+</details>
 
 ## Implementation
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
 1100_하얀 칸.py
 
 1110_더하기 사이클.py
@@ -72,8 +91,15 @@
 2522_별 찍기 - 12.py
 
 2523_별 찍기 - 13.cpp
+</div>
+</details>
 
 ## Math
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
 1000_A+B.cpp .py
 
 1001_A-B.py
@@ -107,14 +133,30 @@
 2476_주사위 게임.cpp
 
 2530_인공지능 시계.cpp
+</div>
+</details>
 
 ## Queue
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
 2164_카드2.java
+</div>
+</details>
 
 ## Sort
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
 1026_보물.cpp
 
 1427_소트인사이드.py
+</div>
+</details>
 
 ### Current number
 2020.12.19 / 2555
