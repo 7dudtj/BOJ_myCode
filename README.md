@@ -5,6 +5,16 @@
 
 2178_미로 탐색.java
 
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
+1260_DFS와 BFS.java
+2178_미로 탐색.java
+</div>
+</details>
+
 ## DFS
 1012_유기농 배추.java
 
