@@ -23,6 +23,8 @@
 1012_유기농 배추.java
 
 1260_DFS와 BFS.java
+
+2606_바이러스.java
 </div>
 </details>
 
@@ -180,4 +182,4 @@
 </details>
 
 ### Current number
-2020.12.22 / 2588
+2020.12.22 / 2606
