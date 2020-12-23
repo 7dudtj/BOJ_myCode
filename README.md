@@ -25,6 +25,8 @@
 1260_DFS와 BFS.java
 
 2606_바이러스.java
+
+2667_단지번호붙이기.java
 </div>
 </details>
 
@@ -184,4 +186,4 @@
 </details>
 
 ### Current number
-2020.12.23 / 2609
+2020.12.23 / 2667
