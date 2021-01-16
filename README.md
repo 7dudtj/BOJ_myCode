@@ -13,6 +13,17 @@
 </div>
 </details>
 
+## BinarySearch
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
+  
+1920_수 찾기.java
+</div>
+</details>
+
 ## Combinatorics
 <details>
 <summary>
