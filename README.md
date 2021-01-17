@@ -32,6 +32,8 @@
 <div markdown="1">
   
 1010_다리 놓기.java
+
+11050_이항 계수 1.java
 </div>
 </details>
 
@@ -343,3 +345,5 @@
 
 ### Current number
 2021.1.17 / 5622
+
+11050
