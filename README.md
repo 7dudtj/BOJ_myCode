@@ -358,6 +358,17 @@
 </div>
 </details>
 
+## Stack
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
+  
+1259_팰린드롬수.java
+</div>
+</details>
+
 ### Current number
 2021.1.18 / 5704
 
