@@ -367,6 +367,8 @@
 8393_합.py
 
 9546_3000번 버스.cpp
+
+9713_Sum of Odd Sequence.java
 </div>
 </details>
 
@@ -418,6 +420,6 @@
 </details>
 
 ### Current number
-2021.1.21 / 9654
+2021.1.21 / 9713
 
 10814 10870 11050 11650 13301
