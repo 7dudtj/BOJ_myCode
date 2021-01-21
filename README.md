@@ -67,6 +67,8 @@
   
 9461_파도반 수열.java
 
+9507_Generations of Tribbles.cpp
+
 9625_BABBA.java
 
 10870_피보나치 수 5.java
@@ -410,6 +412,6 @@
 </details>
 
 ### Current number
-2021.1.21 / 9498
+2021.1.21 / 9507
 
 9625 10814 10870 11050 11650 13301
