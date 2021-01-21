@@ -62,7 +62,8 @@
 문제 보기
 </summary>
 <div markdown="1">
-  
+2748_피보나치 수 2.java
+
 9461_파도반 수열.java
 
 9625_BABBA.java
