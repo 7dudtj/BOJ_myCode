@@ -385,6 +385,8 @@
 9713_Sum of Odd Sequence.java
 
 10039_평균 점수.py
+
+10250_ACM 호텔.cpp
 </div>
 </details>
 
@@ -436,6 +438,6 @@
 </details>
 
 ### Current number
-2021.1.23 / 10172
+2021.1.23 / 10250
 
 10814 10870 11050 11650 13301
