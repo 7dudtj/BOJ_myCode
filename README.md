@@ -11,6 +11,8 @@
   
 2178_미로 탐색.java
 
+7569_토마토.java
+
 7576_토마토.java
 </div>
 </details>
