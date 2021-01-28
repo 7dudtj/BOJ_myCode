@@ -32,6 +32,17 @@
 </div>
 </details>
 
+## BruteForce
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
+  
+2798_블랙잭.java
+</div>
+</details>
+
 ## Combinatorics
 <details>
 <summary>
