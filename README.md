@@ -545,6 +545,8 @@
 15552_빠른 A+B.py
 
 15596_정수 N개의 합.java
+
+15633_Fan Death.py
 </div>
 </details>
 
@@ -614,4 +616,4 @@
 </details>
 
 ### Current number
-2021.1.31 / 15596
+2021.1.31 / 15633
