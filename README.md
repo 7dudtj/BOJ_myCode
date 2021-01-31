@@ -404,6 +404,8 @@
 17204_죽음의 게임.java
 
 17363_우유가 넘어지면?.java
+
+17388_와글와글 숭고한.java
 </div>
 </details>
 
@@ -667,5 +669,4 @@
 </div>
 </details>
 
-### Current number
-2021.1.31 / 17363
+### Note
