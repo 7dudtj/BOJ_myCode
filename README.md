@@ -41,6 +41,8 @@
 </summary>
 <div markdown="1">
   
+1018_체스판 다시 칠하기.java
+  
 2798_블랙잭.java
 </div>
 </details>
