@@ -28,6 +28,8 @@
 </summary>
 <div markdown="1">
   
+1654_랜선 자르기.java
+  
 1920_수 찾기.java
 
 2805_나무 자르기.java
