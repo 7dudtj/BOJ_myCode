@@ -679,5 +679,16 @@
 </div>
 </details>
 
+## Tree
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
+
+1068_트리.java
+</div>
+</details>
+
 ### Note
-트리
+
