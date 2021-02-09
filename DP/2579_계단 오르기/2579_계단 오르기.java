@@ -4,17 +4,12 @@ import java.io.IOException;
 
 // buttom-up DP
 public class Main {
-  // set needed variables
-  static int n;
-  static int[] v;
-  static int[] a;
-
   public static void main(String[] args) throws IOException{
     // set needed components
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    n = Integer.parseInt(br.readLine());
-    v = new int[n+1];
-    a = new int[n+1];
+    int n = Integer.parseInt(br.readLine());
+    int[] v = new int[n+1];
+    int[] a = new int[n+1];
 
     // error-handling
     if (n == 1) {
