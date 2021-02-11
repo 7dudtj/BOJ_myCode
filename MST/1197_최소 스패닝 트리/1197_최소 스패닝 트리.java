@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
+// Prim MST
 public class Main {
   // set needed variables
   public static void main(String[] args) throws IOException{
