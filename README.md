@@ -433,6 +433,8 @@
 <div markdown="1">
   
 1197_최소 스패닝 트리.java
+
+1922_네트워크 연결.java
 </div>
 </details>
 
