@@ -425,6 +425,17 @@
 </div>
 </details>
 
+## MST
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
+  
+1197_최소 스패닝 트리.java
+</div>
+</details>
+
 ## Math
 <details>
 <summary>
@@ -716,4 +727,3 @@
 </details>
 
 ### Note
-1197: 최소신장트리
