@@ -42,6 +42,8 @@
 <div markdown="1">
   
 1654_랜선 자르기.java
+
+1764_듣보잡.java
   
 1920_수 찾기.java
 
