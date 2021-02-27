@@ -790,4 +790,3 @@
 </details>
 
 ### Note
-다익스트라 O(NlogN) 정리 / 5972
