@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 
 public class Main {
   // set needed variables
-  static int[] answer = new int[10];
+  static int[] answer = new int[9];
   static boolean[] visited = new boolean[9];
   static int N, M;
 
