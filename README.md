@@ -33,6 +33,8 @@
 <div markdown="1">
   
 1987_알파벳.java
+
+15649_N과 M (1).java
 </div>
 </details>
 
@@ -798,4 +800,4 @@
 </details>
 
 ### Note
-Backtracking: 15649, 9663
+Backtracking: 9663
