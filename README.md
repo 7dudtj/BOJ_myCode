@@ -34,6 +34,8 @@
   
 1987_알파벳.java
 
+9663_N-Queen.java
+
 15649_N과 M (1).java
 </div>
 </details>
@@ -65,6 +67,8 @@
 1018_체스판 다시 칠하기.java
   
 2798_블랙잭.java
+
+9663_N-Queen.java
 
 14500_테트로미노.java
 </div>
@@ -800,4 +804,3 @@
 </details>
 
 ### Note
-Backtracking: 9663
