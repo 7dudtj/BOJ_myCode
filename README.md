@@ -820,5 +820,6 @@
 </details>
 
 ### Note
+BinarySearch: 2110
 Tree: 5639, 2263
 BFS: 16953
