@@ -37,6 +37,8 @@
 9663_N-Queen.java
 
 15649_N과 M (1).java
+
+15650_N과 M (2).java
 </div>
 </details>
 
