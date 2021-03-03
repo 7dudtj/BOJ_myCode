@@ -32,6 +32,8 @@
 </summary>
 <div markdown="1">
   
+1759_암호 만들기.java
+  
 1987_알파벳.java
 
 9663_N-Queen.java
@@ -73,6 +75,8 @@
 <div markdown="1">
   
 1018_체스판 다시 칠하기.java
+
+1759_암호 만들기.java
   
 2798_블랙잭.java
 
