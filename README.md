@@ -65,6 +65,8 @@
   
 1920_수 찾기.java
 
+2110_공유기 설치.java
+
 2805_나무 자르기.java
 </div>
 </details>
@@ -830,6 +832,5 @@
 </details>
 
 ### Note
-BinarySearch: 2110
 Tree: 5639, 2263
 BFS: 16953
