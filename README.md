@@ -838,5 +838,4 @@
 </details>
 
 ### Note
-Tree: 2263
 BFS: 16953
