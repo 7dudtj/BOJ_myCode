@@ -550,6 +550,8 @@
 
 1011_Fly me to the Alpha Centauri.java
 
+1016_제곱 ㄴㄴ 수.java
+
 1085_직사각형에서 탈출.py
 
 1094_막대기.py
