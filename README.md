@@ -38,6 +38,8 @@
   
 1987_알파벳.java
 
+2580_스도쿠.java
+
 6603_로또.java
 
 9663_N-Queen.java
