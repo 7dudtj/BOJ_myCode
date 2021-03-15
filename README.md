@@ -880,3 +880,4 @@
 </details>
 
 ### Note
+Binary Search: 2467
