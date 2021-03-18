@@ -884,4 +884,4 @@
 </details>
 
 ### Note
-Binary Search: 2467
+Binary Search: 2473
