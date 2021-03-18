@@ -73,6 +73,8 @@
 
 2467_용액.java
 
+2470_두 용액.java
+
 2805_나무 자르기.java
 </div>
 </details>
