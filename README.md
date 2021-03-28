@@ -771,6 +771,8 @@
 </summary>
 <div markdown="1">
   
+1655_가운데를 말해요.java
+  
 1927_최소 힙.java
 
 2075_N번째 큰 수.java
