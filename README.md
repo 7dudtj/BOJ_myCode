@@ -900,5 +900,5 @@
 </details>
 
 ### Note
-Sort: 1946
+BruteForce: 15686
 DP: 17404
