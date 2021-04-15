@@ -183,6 +183,8 @@
 
 1937_욕심쟁이 판다.java
 
+2239_스도쿠.java
+
 2342_Dance Dance Revolution.java
 
 2579_계단 오르기.java
@@ -916,5 +918,4 @@
 </details>
 
 ### Note
-DP: 17404
 BackTracking: 2239
