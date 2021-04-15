@@ -40,6 +40,8 @@
   
 1987_알파벳.java
 
+2239_스도쿠.java
+
 2580_스도쿠.java
 
 6603_로또.java
@@ -182,8 +184,6 @@
 1932_정수 삼각형.java
 
 1937_욕심쟁이 판다.java
-
-2239_스도쿠.java
 
 2342_Dance Dance Revolution.java
 
@@ -918,4 +918,4 @@
 </details>
 
 ### Note
-BackTracking: 2239
+DP: 17404
