@@ -6,9 +6,8 @@ import java.util.Queue;
 import java.util.LinkedList;
 
 public class Main {
-  // set needed variables
   public static void main(String[] args) throws IOException{
-    // set needed components
+    // set needed variables
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     StringTokenizer st = new StringTokenizer(br.readLine(), " ");
     long A = Long.parseLong(st.nextToken());
