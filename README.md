@@ -186,6 +186,8 @@
 1932_정수 삼각형.java
 
 1937_욕심쟁이 판다.java
+  
+2056_작업.java
 
 2342_Dance Dance Revolution.java
 
