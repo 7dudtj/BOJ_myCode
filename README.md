@@ -906,6 +906,8 @@
 문제 보기
 </summary>
 <div markdown="1">
+  
+2056_작업.java
 
 14567_선수과목 (Prerequisite).java
 </div>
