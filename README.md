@@ -184,6 +184,8 @@
 1256_사전.java
 
 1463_1로 만들기.java
+  
+1516_게임 개발.java
 
 1932_정수 삼각형.java
 
@@ -912,6 +914,8 @@
 <div markdown="1">
   
 1005_ACM Craft.java
+  
+1516_게임 개발.java
   
 2056_작업.java
 
