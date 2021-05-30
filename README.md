@@ -927,6 +927,8 @@
   
 2056_작업.java
   
+2252_줄 세우기.java
+  
 9470_Strahler 순서.java
 
 14567_선수과목 (Prerequisite).java
