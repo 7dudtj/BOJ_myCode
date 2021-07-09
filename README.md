@@ -325,6 +325,27 @@
 </div>
 </details>
 
+## Geometry
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
+  
+1085_직사각형에서 탈출.py
+  
+1297_TV 크기.java
+  
+3009_네 번째 점.java
+  
+4153_직각삼각형.java
+  
+10569_다면체.java
+  
+14681_사분면 고르기.java
+</div>
+</details>
+
 ## Implementation
 <details>
 <summary>
