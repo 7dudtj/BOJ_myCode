@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.LinkedList;
 
-public class Main {
+class Main {
   // set needed variables
   static int N;
 
