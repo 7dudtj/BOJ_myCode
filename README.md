@@ -53,6 +53,8 @@
 24542_튜터-튜티 관계의 수.java
   
 24545_Y.java
+
+25919_Lost Edge.java
 </div>
 </details>
 
