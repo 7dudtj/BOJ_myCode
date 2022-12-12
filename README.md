@@ -75,6 +75,8 @@
 
 2580_스도쿠.java
 
+2661_좋은수열.java
+
 6603_로또.java
 
 9663_N-Queen.java
