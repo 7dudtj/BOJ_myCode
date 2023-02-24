@@ -1445,6 +1445,17 @@
 </div>
 </details>
 
+## SegmentTree
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
+
+1275_커피숍2.java
+</div>
+</details>
+
 ## Sort
 <details>
 <summary>
