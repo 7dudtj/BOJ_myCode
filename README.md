@@ -1453,6 +1453,8 @@
 <div markdown="1">
 
 1275_커피숍2.java
+
+2042_구간 합 구하기.java
 </div>
 </details>
 
