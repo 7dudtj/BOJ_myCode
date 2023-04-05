@@ -85,6 +85,8 @@
 
 9663_N-Queen.java
   
+14888_연산자 끼워넣기.java
+  
 14889_스타트와 링크.java
 
 15649_N과 M (1).java
@@ -176,6 +178,8 @@
 10211_Maximum Subarray.java
 
 14500_테트로미노.java
+  
+14888_연산자 끼워넣기.java
   
 14889_스타트와 링크.java
 
