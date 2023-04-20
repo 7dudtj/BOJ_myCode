@@ -141,8 +141,6 @@
 2512_예산.java
 
 2805_나무 자르기.java
-
-25916_싫은데요.java
 </div>
 </details>
 
@@ -1662,4 +1660,19 @@
 </div>
 </details>
 
-### Note  
+## TwoPointer
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
+  
+2018_수들의 합.java
+  
+2467_용액.java
+  
+2470_두 용액.java
+  
+2473_세 용액.java
+</div>
+</details>
