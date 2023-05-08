@@ -2,13 +2,13 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.lang.Math;
+import java.util.PriorityQueue;
 
-public class Main {
-  // set needed static variables
+public class Main{
+  // set static variables
   static int[] parent;
+  static int[] depth;
 
   public static void main(String[] args) throws IOException{
     // set needed variables
@@ -16,95 +16,115 @@ public class Main {
     StringTokenizer st = new StringTokenizer(br.readLine(), " ");
     int N = Integer.parseInt(st.nextToken());
     int M = Integer.parseInt(st.nextToken());
-    double[] xcor = new double[N+1];
-    double[] ycor = new double[N+1];
-    parent = new int[N+1];
-    for (int i = 1; i <= N; i++) parent[i] = i;
-    ArrayList<Edge> edgeList = new ArrayList<>();
-    int f, t, count = 0;
-    double len = 0;
+    int[] godX = new int[N + 1];
+    int[] godY = new int[N + 1];
+    PriorityQueue<Edge> pq = new PriorityQueue<>();
+    parent = new int[N + 1];
+    depth = new int[N + 1];
+    for (int i = 1; i <= N; i++){
+      parent[i] = i;
+      depth[i] = 1;
+    }
+    double answer = 0;
 
-    // get nodes
+    // get gods' coordinate
     for (int i = 1; i <= N; i++){
       st = new StringTokenizer(br.readLine(), " ");
-      xcor[i] = Double.parseDouble(st.nextToken());
-      ycor[i] = Double.parseDouble(st.nextToken());
+      godX[i] = Integer.parseInt(st.nextToken());
+      godY[i] = Integer.parseInt(st.nextToken());
     }
 
-    // make edges
+    // make possible edges
     for (int i = 1; i < N; i++){
-      for (int j = 2; j <= N; j++){
-        edgeList.add(new Edge(i, xcor[i], ycor[i], j, xcor[j], ycor[j]));
+      for (int j = i + 1; j <= N; j++){
+        pq.add(new Edge(i, godX[i], godY[i], j, godX[j], godY[j]));
       }
     }
-    Collections.sort(edgeList);
 
-    // get connected edges
-    for (int i = 0; i < M; i++){
+    // get current channels
+    for (int i = 1; i <= M; i++){
       st = new StringTokenizer(br.readLine(), " ");
-      f = Integer.parseInt(st.nextToken());
-      t = Integer.parseInt(st.nextToken());
-      union(f, t);
+      int aGod = Integer.parseInt(st.nextToken());
+      int bGod = Integer.parseInt(st.nextToken());
+      union(aGod, bGod);
     }
 
-    // do KruskalMST
-    for (int i = 0; i < edgeList.size(); i++){
-      Edge e = edgeList.get(i);
+    // connect gods
+    while (!pq.isEmpty()){
+      Edge tmp = pq.poll();
 
-      // check if edge creates cycle
-      if (find(e.from) != find(e.to)){
-        count++;
-        len += e.distance;
-        union(e.from, e.to);
-        if (count == ((N-1) - M)) break;
+      if (find(tmp.a) != find(tmp.b)){
+        union(tmp.a, tmp.b);
+        answer += tmp.distance;
       }
     }
 
     // print answer and end program
-    System.out.printf("%.2f\n", len);
+    System.out.printf("%.2f", answer);
     br.close();
     return;
   }
 
-  // find function for KruskalMST
-  private static int find(int x){
-    if (parent[x] == x) return x;
-    return parent[x] = find(parent[x]);
-  }
-
-  // union function for KruskalMST
+  // union function
   private static void union(int a, int b){
     a = find(a);
     b = find(b);
-    if (a != b) parent[b] = a;
+
+    if (a == b) return;
+
+    int aDepth = depth[a];
+    int bDepth = depth[b];
+
+    if (aDepth > bDepth){
+      parent[b] = a;
+    }else if (aDepth < bDepth){
+      parent[a] = b;
+    }else{ // aDepth == bDepth
+      parent[b] = a;
+      depth[a]++;
+    }
+
+    return;
+  }
+
+  // find function
+  private static int find(int x){
+    if (parent[x] == x){
+      return x;
+    }
+
+    return parent[x] = find(parent[x]);
   }
 }
 
 // Edge class
 class Edge implements Comparable<Edge>{
-  // class variables
-  int from;
-  double fromx;
-  double fromy;
-  int to;
-  double tox;
-  double toy;
+  /* Edge connects a node to b node */
+
+  // Edge variables
+  int a;
+  int ax;
+  int ay;
+  int b;
+  int bx;
+  int by;
   double distance;
-  // constructor
-  public Edge (int from, double fromx, double fromy, 
-  int to, double tox, double toy){
-    this.from = from;
-    this.fromx = fromx;
-    this.fromy = fromy;
-    this.to = to;
-    this.tox = tox;
-    this.toy = toy;
-    this.distance = Math.sqrt(Math.pow(fromx-tox, 2) + Math.pow(fromy-toy, 2));
+
+  // Edge constructor
+  public Edge(int a, int ax, int ay, int b, int bx, int by){
+    this.a = a;
+    this.ax = ax;
+    this.ay = ay;
+    this.b = b;
+    this.bx = bx;
+    this.by = by;
+    this.distance = Math.sqrt(Math.pow(ax - bx, 2) + Math.pow(ay - by, 2));
   }
-  // Comparable
+
+  // Edge compare function
   @Override
   public int compareTo(Edge e){
-    if (distance < e.distance) return -1;
-    return 1;
+    if (distance - e.distance <= 0) return -1;
+    else return 1;
   }
 }
