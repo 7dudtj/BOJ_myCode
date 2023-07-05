@@ -116,6 +116,8 @@
 </summary>
 <div markdown="1">
   
+1300_K번째 수.java
+  
 1654_랜선 자르기.java
 
 1764_듣보잡.java
