@@ -1496,6 +1496,39 @@
 </div>
 </details>
 
+## Simulation
+<details>
+<summary>
+문제 보기
+</summary>
+<div markdown="1">
+
+1547_공.java
+  
+1966_프린터 큐.java
+  
+2174_로봇 시뮬레이션.java
+  
+2638_치즈.java
+  
+2947_나무 조각.cpp
+  
+3190_뱀.java
+
+6359_만취한 상범.cpp
+  
+13419_탕수육.py
+  
+13698_Hawk eyes.java
+  
+14499_주사위 굴리기.java
+  
+17135_캐슬 디펜스.java
+  
+17204_죽음의 게임.java
+</div>
+</details>
+
 ## Sort
 <details>
 <summary>
