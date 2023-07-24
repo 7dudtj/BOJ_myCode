@@ -73,6 +73,8 @@
 </summary>
 <div markdown="1">
   
+1182_부분수열의 합.java
+  
 1759_암호 만들기.java
   
 1799_비숍.java
@@ -158,6 +160,8 @@
 <div markdown="1">
   
 1018_체스판 다시 칠하기.java
+  
+1182_부분수열의 합.java
 
 1436_영화감독 숌.java
   
