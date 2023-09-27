@@ -1,56 +1,52 @@
+import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.io.IOException;
-import java.util.Stack;
 
-public class Main {
-	public static void main(String args[]) throws IOException	{
-    // set needed variables
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    String s1 = br.readLine();
-    String s2 = br.readLine();
-    int[][] dp = new int[s2.length()+1][s1.length()+1];
+public class Main{
+    public static void main(String[] args) throws IOException{
+        // Set needed variables
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        char[] first = br.readLine().toCharArray();
+        char[] second = br.readLine().toCharArray();
+        br.close();
+        int[][] dp = new int[first.length + 1][second.length + 1];
 
-    // do dp
-    for (int i = 1; i <= s2.length(); i++){
-      for (int j = 1; j <= s1.length(); j++){
-        if (s2.substring(i-1,i).equals(s1.substring(j-1,j))){
-          dp[i][j] = dp[i-1][j-1] + 1;
-        }else{
-          dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+        // Do dp
+        for (int i = 1; i <= first.length; i++){
+            for (int j = 1; j <= second.length; j++){
+                if (first[i - 1] == second[j - 1]){
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                }else{
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
         }
-      }
-    }
 
-    // find answer
-    int length = dp[s2.length()][s1.length()];
-    String lcs = "";
-    int i = s2.length();
-    int j = s1.length();
-    Stack<String> s = new Stack<>();
-    while ((i != 0) && (j != 0)){
-      if (dp[i][j] == dp[i-1][j]){
-        i--;
-      }else if (dp[i][j] == dp[i][j-1]){
-        j--;
-      }else if (dp[i][j]-1 == dp[i-1][j-1]){
-        s.push(s2.substring(i-1, i));
-        i--;
-        j--;
-      }
-    }
-    while (!s.isEmpty()){
-      lcs += s.pop();
-    }
+        // Make LCS
+        int lcsLength = dp[first.length][second.length];
+        char[] myLcs = new char[lcsLength];
+        int iIdx = first.length;
+        int jIdx = second.length;
+        int count = lcsLength;
+        while (iIdx > 0 && jIdx > 0 && count > 0){
+            if (dp[iIdx][jIdx - 1] == dp[iIdx][jIdx]){
+                jIdx--;
+            }else if (dp[iIdx - 1][jIdx] == dp[iIdx][jIdx]){
+                iIdx--;
+            }else{
+                // Find LCS char
+                count--;
+                myLcs[count] = first[iIdx - 1];
+                iIdx--;
+                jIdx--;
+            }
+        }
 
-    // print length of LCS
-    System.out.println(length);
-    if (length != 0){
-      // print LCS
-      System.out.println(lcs);
+        // Print answer and end program
+        System.out.println(lcsLength);
+        if (lcsLength != 0){
+            System.out.println(new String(myLcs));
+        }    
+        return;
     }
-    // end program
-    br.close();
-    return;
-  }
 }
