@@ -1,34 +1,35 @@
+import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.io.IOException;
 
-public class Main {
-	public static void main(String args[]) throws IOException	{
-    // set needed variables
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    String s1 = br.readLine();
-    String s2 = br.readLine();
-    String s3 = br.readLine();
-    int[][][] dp = new int[s1.length()+1][s2.length()+1][s3.length()+1];
+public class Main{
+    public static void main(String[] args) throws IOException{
+        // Set needed variables
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        char[] first = br.readLine().toCharArray();
+        char[] second = br.readLine().toCharArray();
+        char[] third = br.readLine().toCharArray();
+        br.close();
+        int firstLen = first.length;
+        int secondLen = second.length;
+        int thirdLen = third.length;
+        int[][][] dp = new int[firstLen + 1][secondLen + 1][thirdLen + 1];
 
-    // do dp
-    for (int i = 1; i <= s1.length(); i++){
-      for (int j = 1; j <= s2.length(); j++){
-        for (int k = 1; k <= s3.length(); k++){
-          if (s1.substring(i-1,i).equals(s2.substring(j-1,j)) && 
-          s2.substring(j-1,j).equals(s3.substring(k-1,k))){
-            dp[i][j][k] = dp[i-1][j-1][k-1] + 1;
-          }else{
-            dp[i][j][k] = 
-            Math.max(dp[i-1][j][k], Math.max(dp[i][j-1][k], dp[i][j][k-1]));
-          }
+        // Find LCS
+        for (int i = 1; i <= firstLen; i++){
+            for (int j = 1; j <= secondLen; j++){
+                for (int k = 1; k <= thirdLen; k++){
+                    if (first[i - 1] == second[j - 1] && second[j - 1] == third[k - 1]){
+                        dp[i][j][k] = dp[i - 1][j - 1][k - 1] + 1;
+                    }else{
+                        dp[i][j][k] = Math.max(Math.max(dp[i - 1][j][k], dp[i][j - 1][k]), dp[i][j][k - 1]);
+                    }
+                }
+            }
         }
-      }
-    }
 
-    // print answer and end program
-    System.out.println(dp[s1.length()][s2.length()][s3.length()]);
-    br.close();
-    return;
-  }
+        // Print answer and end program
+        System.out.print(dp[firstLen][secondLen][thirdLen]);
+        return;
+    }
 }
