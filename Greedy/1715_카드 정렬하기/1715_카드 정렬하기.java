@@ -1,42 +1,40 @@
+import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Queue;
 import java.util.PriorityQueue;
-import java.io.IOException;
+import java.util.Comparator;
 
-public class Main {
-	public static void main(String args[]) throws IOException	{
-    // set needed variables
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    int N = Integer.parseInt(br.readLine());
-    long answer = 0;
-    PriorityQueue<Integer> pq = new PriorityQueue<>();
+public class Main{
+    public static void main(String[] args) throws IOException{
+        // Set needed variables
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
+        Queue<Integer> pq = new PriorityQueue<>(new Comparator<>(){
+            @Override
+            public int compare(Integer i1, Integer i2){
+                return i1 - i2;
+            }
+        });
+        long answer = 0;
 
-    // get input
-    for (int i = 0; i < N; i++)
-      pq.add(Integer.parseInt(br.readLine()));
+        // Get cards
+        for (int i = 0; i < N; i++){
+            int card = Integer.parseInt(br.readLine());
+            pq.add(card);
+        }
+        br.close();
 
-    // if N == 1
-    if (N == 1){
-      System.out.println(0);
-      br.close();
-      return;
+        // Calculate answer
+        while (pq.size() >= 2){
+            int first = pq.poll();
+            int second = pq.poll();
+            answer += (first + second);
+            pq.add(first + second);
+        }
+
+        // Print answer and end program
+        System.out.print(answer);
+        return;
     }
-    
-    // do main process
-    int first, second;
-    while (true){
-      if (pq.size() == 1){
-        break;
-      }
-      first = pq.poll();
-      second = pq.poll();
-      answer += (first+second);
-      pq.add(first+second);
-    }
-
-    // print answer and end program
-    System.out.println(answer);
-    br.close();
-    return;
-  }
 }
