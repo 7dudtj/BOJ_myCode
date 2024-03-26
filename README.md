@@ -850,7 +850,7 @@
 
 2556_별 찍기 - 14.cpp
 
-2557_Hello World.cpp .java .py
+2557_Hello World.cpp .java .py .c
 
 2562_최댓값.py
 
