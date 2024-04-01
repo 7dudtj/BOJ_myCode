@@ -783,6 +783,8 @@
 1000_A+B.java .py .cpp .c
 
 1001_A-B.c
+
+1008_AdivB.c
   
 1100_하얀 칸.py
 
@@ -1211,7 +1213,7 @@
   
 1002_터렛.java
 
-1008_AdivB.py
+1008_AdivB.py .c
 
 1011_Fly me to the Alpha Centauri.java
 
