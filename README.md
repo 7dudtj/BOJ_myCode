@@ -781,6 +781,8 @@
 <div markdown="1">
   
 1000_A+B.java .py .cpp .c
+
+1001_A-B.c
   
 1100_하얀 칸.py
 
@@ -1201,7 +1203,7 @@
   
 1000_A+B.java .py .cpp .c
 
-1001_A-B.py
+1001_A-B.py .c
   
 1002_터렛.java
 
