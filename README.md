@@ -780,11 +780,7 @@
 </summary>
 <div markdown="1">
   
-1000_A+B.java
-  
-1000_A+B.py
-
-1000_A+B.cpp
+1000_A+B.java .py .cpp .c
   
 1100_하얀 칸.py
 
@@ -1203,11 +1199,7 @@
 </summary>
 <div markdown="1">
   
-1000_A+B.java
-  
-1000_A+B.py
-
-1000_A+B.cpp
+1000_A+B.java .py .cpp .c
 
 1001_A-B.py
   
